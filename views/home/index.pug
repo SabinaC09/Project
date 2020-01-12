@@ -1,0 +1,16 @@
+extends ../layout.pug
+
+block content
+  h1.head-title Welcome to MiniShop!
+  
+  form#search-form
+    input(type='text', name='query', placeholder='Search product here...' style="flex:1;")
+    input(type='submit', value='Search')
+  .cards
+    each product in products
+      .product-card
+        div.text-block
+          img.product-img(src=`${product.image}` width="70" height="140")
+          h3(style = "text-align:center; display:inline-block; float:left; margin-left:20%;margin-right:20%;")=product.name
+          a.btn_delete(href=`/delete/${product.id}`) Delete 
+

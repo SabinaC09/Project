@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Lato;
+  margin: 0;
+}
+
+main {
+  padding: 0 40px;
+}
+
+.nav {
+  padding: 10px 40px;
+}
+
+.nav ul {
+  padding-left: 0;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav li:first-of-type {
+  padding-left: 0px;
+}
+
+.nav li a {
+  text-decoration-line: none
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.head-title {
+  margin-top: 0;
+  color: white;
+  text-align: center;
+}
+
+.form {
+  width: 50%;
+}
+
+.center-form {
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-size: 1.2em;
+  width: 30%;
+  display: inline-block;
+  text-align: end;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.input-field {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  font-size: inherit;
+}
+
+textarea.input-field {
+  padding: 10px;
+  font-family: inherit;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.btn {
+  margin:auto;
+  width:50%;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn_delete {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: static;
+    /*margin-left: 100px;*/
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #2fa4e7;
+  border-color: #2fa4e7;
+}
+
+.btn-success {
+  color: #ffffff;
+  background-color: #73a839;
+  border-color: #73a839;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-color: #dd5600;
+  border-color: #dd5600;
+}
+
+.btn-danger {
+  color: #ffffff;
+  background-color: #c71c22;
+  border-color: #c71c22;
+}
+
+.form-btn {
+  display: block;
+  margin-left: calc(30% + 15px);
+}
+
+.product-card {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 33%;
+  display: inline-block;
+}
+
+.product-img {
+  width: 100%;
+  /*max-width: 350px;*/
+  /*max-height: 350px;*/
+}
+
+.cards {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#search-form {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width:20%;
+  padding: 10px 10px 10px 0px;
+}
+
+#add-category-form {
+  width: 50%;
+}
+
+.view-more, .edit-btn, .delete-btn {
+  text-align: right;
+  padding: 5px;
+}
+
+.view-more a, .edit-btn a, .delete-btn a {
+  text-decoration-line: none;
+}
+
+.error-msg, .success-msg {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.error-msg {
+  color: red;
+}
+
+.success-msg {
+  color: green;
+}
+
+.align-right {
+  float: right;
+}
+
+footer {
+  padding: 15px;
+}
+
+/**/
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.fa-arrow-right {
+    float: right;
+    padding-right: 16px;
+}
+
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.bg {
+    /* The image used */
+    background-image: url("https://shopsquareone.com/sites/default/files/assets/store/images/ferragamo-store_4.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2
+{
+  text-align:center;  
+  padding-top:40px;
+}
+
+
+.text-log {
+  border: 1px solid white;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  
+}
+
+
+.text-block {
+  border: 2px solid black;
+  /*border-radius: 12px;*/
+    background-color: rgba(0,0,0,.5);
+    color: white;
+}

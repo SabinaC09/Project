@@ -1,0 +1,11 @@
+extends ../layout.pug
+
+block content
+  div.text-log(style="margin-left:30%;margin-right:30%;")
+    h2 Add Category
+    form#add-category-form.center-form(method='post')
+      .form-group
+        label(for='name') Name
+        input#name.input-field(name='name', type='text')
+      .form-group
+        input#add-category-btn.btn(type='submit', value='Add' style="margin:auto;width:100%;")
